@@ -1,27 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
 
+
+/* main layout css */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 .container {
     display: flex;
-
 }
 
+
+
+
+/* auth section desgining */
 .auth {
     height: 100vh;
     flex: 3;
     background-color: black;
 }
 
+.auth-container {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-logo {
+    width: 50%;
+    margin: 30% 0 15% 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-label{
+    width: 65%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.auth-input {
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    height: 3.5vh;
+    margin-top: 5px;
+    padding: 0 15px;
+    border-radius: 2px;
+}
+
+.sign-in {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    width: 65%;
+    padding: 12px;
+    background-color: #0074ab;
+    margin-bottom: 60px;
+}
+
+.sign-in:hover {
+    background-color: #026896;
+}
+
+.auth-link {
+    margin-bottom: 25px;
+    color: #018fd1;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    color: #0074ab;
+    text-decoration: underline;
+}
+
+hr {
+    color: grey;
+    opacity: 0.4;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.create-account {
+    width: 65%;
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+}
+
+.create-account:hover {
+    background-color: rgb(51,51,51);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright, .footer-links, footer div p {
+    color: rgb(211, 209, 209);
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+
+
+
+
+
+/* aside designing */
 .aside-box {
     flex: 5;
     height: 100vh;
     color: white;
-    font-family: 'Roboto', sans-serif;
     background-image: url(../images/login-bg.jpg);
     background-size:100%;
     background-repeat: none;
