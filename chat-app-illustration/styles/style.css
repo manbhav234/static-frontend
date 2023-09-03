@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto+Condensed&family=Roboto:wght@300&family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', 'sans serif';
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the background containers */
+
+.container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+}
+
+.notch {
+    background-color: white;
+    width: 60%;
+    height: 36px;
+    border-radius: 16px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.app-window {
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    top: -20px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.top-bar {
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    border-radius: 20px 20px 3px 3px;
+    display: flex;
+    align-items: center;
+}
+
+.img-container {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 15px 20px;
+}
+
+.go-back-btn {
+    color: white;
+    padding: 30px 0 15px 15px;
+    font-weight: 700;
+}
+
+.top-bar .img-container img {
+    width: 30px;
+    border-radius: 15px;
+    padding: 0px 2px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    align-self: flex-start;
+    height: 60%;
+    padding: 30px 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info h4 {
+    align-self: flex-start;
+    color: white;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contact-info p {
+    align-self: flex-start;
+    font-size: 8px;
+    color: hsl(270, 20%, 96%);
+}
+
+
+
+.options-btn {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 98px;
+    
+}
+
+.option-btn-style {
+    color: white;
+    font-size: 10px;
+    line-height: 7px;
+    font-weight: bold;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.reciever-chat {
+    align-self: flex-start;
+    width: 40%;
+    background-color: hsl(276, 100%, 96%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px 20px 20px 5px;
+    color:  hsl(276, 55%, 52%);
+    font-weight: 500;
+    font-size: 8px;
+    padding: 15px;
+    margin: 8px 15px;
+
+}
+
+.sender-chat {
+    align-self: flex-end;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px 20px 5px 20px;
+    color:   hsl(271, 15%, 43%);
+    font-weight: 500;
+    font-size: 8px;
+    padding: 15px;
+    margin: 8px 15px;
+}
+
+.sender-small-chat {
+    align-self: flex-end;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px 20px 5px 20px;
+    color:   hsl(271, 15%, 43%);
+    font-weight: 500;
+    font-size: 8px;
+    padding: 15px;
+    margin: 8px 15px;
+}
+
+.sender-img-container {
+    align-self: flex-end;
+    margin: 20px 15px 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sender-img-container img {
+    width: 50px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+
+.ask-price-box {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 15px;
+    border-radius: 20px 20px 20px 5px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    padding: 15px;
+}
+
+.ask-price-label {
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.choice-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-btn {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.5);
+
+}
+
+.price {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.input-message-box {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 5px 15px 5px;
+    border-radius: 50px;
+    
+}
+
+.input-message-box p {
+    color: rgba(0,0,0,0.2);
+    font-size: 12px;
+    margin: 0 0 0 15px;
+}
+
+.input-message-box span {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: hsl(271, 36%, 24%);
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.info {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info h1 {
+    align-self: flex-start;
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0px 100px;
+    
+}
+
+.info p {
+    margin-top: 20px;
+    color: hsl(270, 7%, 64%);
+    padding: 0px 100px;
+    line-height: 25px;
+}
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
